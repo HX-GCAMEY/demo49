@@ -54,6 +54,7 @@ export class UsersController {
     if (name) {
       return this.usersDbService.getUserByName(name);
     }
+    console.log(name);
 
     return this.usersDbService.getUsers();
   }
